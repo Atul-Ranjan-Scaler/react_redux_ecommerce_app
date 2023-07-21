@@ -10,7 +10,6 @@ export default function cartReducer(state = initialState, action) {
   switch(action.type){
     case ADD_ITEM:
       const { product } = action.payload;
-      console.log(product);
       return {
         ...state,
         cart: [...state.cart, product],
